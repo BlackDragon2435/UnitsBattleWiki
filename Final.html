@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units Battlegrounds CheatSheet!!!</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background: #1e1e1e;
+            border-bottom: 2px solid #444;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 12px 20px;
+            margin: 5px;
+            background: linear-gradient(135deg, #ff8c00, #ff0080);
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.4);
+        }
+        .tab:hover, .active-tab {
+            background: linear-gradient(135deg, #ff6a00, #e00074);
+            transform: scale(1.05);
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border-top: 2px solid #444;
+            background: #222;
+            max-width: 900px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .active {
+            display: block;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .fill-here {
+            font-style: italic;
+            color: #ffcc00;
+        }
+        h1 {
+            text-align: center;
+            background: linear-gradient(135deg, #ff8c00, #ff0080);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.4);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll(".tab");
+            const contents = document.querySelectorAll(".tab-content");
+            
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function() {
+                    tabs.forEach(t => t.classList.remove("active-tab"));
+                    contents.forEach(content => content.style.display = "none");
+                    
+                    document.getElementById(this.dataset.target).style.display = "block";
+                    this.classList.add("active-tab");
+                });
+            });
+            
+            // Activate first tab by default
+            tabs[0].click();
+        });
+    </script>
+</head>
+<body>
+    <h1>🔥 Massive Info Dump 💡</h1>
+    
+    <div class="tab-container">
+        <div class="tab" data-target="units">⚔️ Units</div>
+        <div class="tab" data-target="enchants">✨ Enchants</div>
+        <div class="tab" data-target="history">📜 History</div>
+        <div class="tab" data-target="lore">📖 Lore</div>
+        <div class="tab" data-target="useless">🤯 Useless Facts</div>
+    </div>
+    
+    <div id="units" class="tab-content">
+        <h2>⚔️ Unit Details</h2>
+        <p class="Still Being Worked On">(Copying units as we speak)</p>
+    </div>
+    
+    <div id="enchants" class="tab-content">
+        <h2>✨ Enchant Descriptions</h2>
+        <p>🃏 <strong>Joker (0.1%)</strong> - Increase 🏃‍♂️ Evade Chance by <strong>35%</strong></p>
+		<p>🧛 <strong>Vampire (0.1%)</strong> - Heals by <strong>25 HP</strong> for each attack</p>
+		<p>⚔️ <strong>Executor (0.1%)</strong> - Increase 💥 Crit Damage Coeff by <strong>60%</strong></p>
+		<p>🗡️ <strong>Assassin (0.1%)</strong> - Increase 🎯 Crit Chance by <strong>35%</strong></p>
+		<p>🏋️ <strong>Titan (0.1%)</strong> - Increase ❤️ HP by <strong>50%</strong></p>
+		<p>🔭 <strong>Sniper (0.1%)</strong> - Increase 🎯 Accuracy by <strong>50%</strong></p>
+		<p>⚡ <strong>Lightning (0.1%)</strong> - Reduce ⏳ Cooldown by <strong>35%</strong></p>
+		<p>💪 <strong>Powerful (0.1%)</strong> - Increase 🔥 Damage by <strong>50%</strong></p>
+		<p>🪞 <strong>Mirror (0.1%)</strong> - Return <strong>35%</strong> damage to attacker</p>
+		<p>🎯 <strong>Accurate (0.2%)</strong> - Increase 🎯 Crit Chance by <strong>20%</strong></p>
+		<p>💥 <strong>Critical (0.2%)</strong> - Increase 💥 Crit Damage Coeff by <strong>25%</strong></p>
+		<p>🐍 <strong>Viper (0.2%)</strong> - Periodic damage <strong>3 HP every 0.2s</strong> (10 times)</p>
+		<p>🤸 <strong>Dexterous (0.2%)</strong> - Increase 🏃‍♂️ Evade Chance by <strong>20%</strong></p>
+		<p>❄️ <strong>Blizzard (0.2%)</strong> - Slows movement by <strong>50%</strong> and slows attack speed by <strong>25%</strong></p>
+		<p>🦍 <strong>Big (1%)</strong> - Increase ❤️ HP by <strong>25%</strong></p>
+		<p>🎯 <strong>Exact (1%)</strong> - Increase 🎯 Accuracy by <strong>15%</strong></p>
+		<p>🎭 <strong>Trickster (1%)</strong> - Reduce ⏳ Cooldown by <strong>20%</strong></p>
+		<p>🦔 <strong>Hedgehog (1%)</strong> - Return <strong>15%</strong> damage to attacker</p>
+		<p>💪 <strong>Bodybuilder (1%)</strong> - Increase 🔥 Damage by <strong>25%</strong></p>
+		<p>🩸 <strong>Leech (1%)</strong> - Heals by <strong>10 HP</strong> for each attack</p>
+		<p>🔥 <strong>Fire (1%)</strong> - Periodic damage <strong>5 HP every 0.8s</strong> (3 times)</p>
+		<p>❄️ <strong>Frost (1%)</strong> - Slows movement by <strong>30%</strong> and slows attack speed by <strong>25%</strong></p>
+		<p>☠️ <strong>Toxic (1%)</strong> - Periodic damage <strong>2 HP every 0.3s</strong> (8 times)</p>
+		<p>⚡ <strong>Fast (4%)</strong> - Reduce ⏳ Cooldown by <strong>10%</strong></p>
+		<p>💪 <strong>Strong (4%)</strong> - Increase 🔥 Damage by <strong>10%</strong></p>
+		<p>❤️ <strong>Life (4%)</strong> - Increase ❤️ HP by <strong>10%</strong></p>
+		<p>⚪ <strong>Default (76.9%)</strong> - Nothing 😐</p>
+    </div>
+    
+    <div id="history" class="tab-content">
+        <h2>📜 Completely Unnecessary Historical Context</h2>
+        <p>There once was a man who stumbled into a new world—a world of unit battlegrounds. Here, you could open a crate and obtain a unit to fight for you. These units had no minds of their own—think of it like Pokémon battles but with chess pieces.</p>
+    
+		<p>To collect all the chess pieces, you must travel across different worlds and grow stronger. His grandpa may or may not have said this on his deathbed… or perhaps when he moved into a retirement home. (Honestly, no one’s quite sure.)</p>
+    
+		<p>Determined, you set out on your mission to conquer this strange and dangerous world. 🏆</p>
+    </div>
+    
+    <div id="lore" class="tab-content">
+        <h2>📖 Overly Detailed Lore</h2>
+		
+		
+		<p class="fill-here">Once upon a time, in a world filled with battles that were as much about strategy as they were about chance, there existed a man named Mark. Mark wasn’t an extraordinary person—no magical powers, no enchanted sword or cursed armor, just a regular guy with an abnormal thirst for adventure and a love for abstract thinking. One day, he tripped over a rock while walking through the forest and suddenly found himself not in the forest, but in a vast open field that stretched endlessly in every direction. The sky was oddly purple, and the ground was covered in checkered tiles. Yes, checkered tiles, like those of a chessboard.
+
+As Mark gazed around, trying to figure out how he had ended up in this strange place, a small floating orb appeared in front of him. The orb buzzed and then spoke, “Welcome to the world of Unit Battlegrounds. Here, you will collect units to fight on your behalf. These units are not alive in the traditional sense—think of them as chess pieces, but with much more potential than you could imagine. Each piece has its own unique set of moves and abilities, but they require no mind of their own. They are only as powerful as you make them, so choose wisely.”
+
+Mark blinked, unsure of whether he was dreaming or hallucinating, but the orb continued to speak, explaining the rules of this world with as much enthusiasm as a tired professor lecturing at 8 AM. “Your goal is simple: Collect all the chess pieces. Travel across different worlds, battling other players, and grow stronger as you collect these pieces. The more pieces you collect, the stronger your army becomes. You’ll face challenges, puzzles, and even more oddities along the way, but don’t worry. The key to success lies in your strategy. And your ability to avoid getting distracted, of course.” The orb paused, and for a moment, Mark thought it was done talking. But then, it said something even more cryptic: “You’ll find it’s not about the units you collect but about the journey. And the friends you make. And the enemies you defeat. And the… Why are you still reading this? Are you looking for some type of code??”
+
+Mark, now thoroughly confused, looked down at the ground, trying to make sense of what was happening. He blinked again and realized that a crate had appeared at his feet. It was made of shimmering gold, and the air around it hummed with a faint energy. This crate, the orb explained, was the first step in Mark’s journey to collect units. He opened it with a hesitant hand and inside found a knight, carved from what appeared to be marble. It had a slight glow to it, as if it were ready to spring to life, but it didn’t move—of course, it wouldn’t move without Mark’s guidance.
+
+“You’ll need to travel across different realms to unlock more crates, each with more powerful units inside,” the orb continued. “Each realm has its own challenges. Some may require you to solve puzzles. Others might require you to fight other players. But no matter what, you’ll need to remain focused on your ultimate goal: to collect every chess piece and—wait, did I mention that there’s a *real* challenge that you’ll face when you get all the pieces? It’s called ‘The Final Move,’ and it’s a thing of legend, or so I’ve heard. But maybe it’s all just a myth. Or maybe—” The orb paused dramatically. “Maybe I’m telling you too much. But you’ll figure it out. You always do.”
+
+Mark, now feeling both overwhelmed and slightly more intrigued, turned his attention back to the crate. He could hear distant sounds of battle coming from far off in the distance. The world was clearly alive, brimming with action and tension. But just as he was about to take his first step forward, a strange figure appeared before him. It was a bishop—no, not a person, but an actual bishop chess piece, floating above the ground. It looked at him with eyes that seemed too wise for something made of wood. The bishop spoke, “You’ve begun your journey, but remember—this world is not linear. The paths you take will twist and turn. You’ll think you’ve reached the end only to realize there’s more. And the more you learn, the less you’ll truly understand.”
+
+Mark was taken aback. “What do you mean? I just need to collect all the chess pieces, right?” The bishop smiled, though its wooden mouth barely shifted. “Ah, yes. But collecting pieces is just the beginning. You must also defeat the Rooks. They control the gateways between the realms. Without defeating them, you can never reach your true goal.” Mark was starting to feel like he’d heard this story somewhere before, but he couldn’t quite place it. And then, like an unexpected gust of wind, the bishop’s words cut through the air: “And don’t forget—the true nature of this world can only be revealed when you have all the pieces in your possession. But perhaps it is not the pieces themselves, but rather the story they weave together that holds the greatest power.”
+
+As Mark absorbed this new information, his mind began to race, and the world around him seemed to shift ever so slightly. The ground beneath him felt different, the air around him heavier. But before he could react, a voice echoed in his head, the voice of the orb once more: “Did I mention that there are secrets hidden in this world that even I don’t fully understand? And that you may have to question everything you think you know about what’s real and what’s not?”
+
+It was then that Mark noticed something strange. He had no memory of how long he had been standing there. Was it minutes? Hours? Days? It felt like an eternity, but also as if time had no meaning in this realm. He turned to the bishop for guidance, but the piece had already disappeared, leaving him alone in the vast, checkered world.
+
+As Mark began to walk forward, determined to fulfill his destiny, he realized that the journey ahead would be nothing like what he had imagined. It would be filled with twists and turns, false promises, and endless puzzles. And through it all, the only constant would be the need to gather units, to battle, to learn, and—most importantly—to keep searching for the elusive “code” that seemed to be hidden in plain sight. Because, after all, What if the code was the key to everything? Or maybe the code didn’t matter at all. Maybe it was just another piece of the puzzle, another random string in an endless loop of questions. Why are you still reading this? Are you looking for some type of code??
+
+And so, Mark continued on his quest, never fully understanding what awaited him, but always driven forward by the mysteries that lay just beyond his reach. The end of the journey was not the end at all, but rather the beginning of yet another loop. Another cycle of endless questions and answers, none of which could ever quite explain the true nature of the world he now found himself in.
+
+And with that, the legend of the man who stumbled into a world of unit battlegrounds was born.</p>
+    </div>
+    
+    <div id="useless" class="tab-content">
+        <h2>🤯 Useless Facts</h2>
+		<a href="https://neal.fun/stimulation-clicker/" target="_blank" class="random-link">Click here for something random!</a>
+    </div>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="YOUR_VIDEO_LINK_HERE" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
